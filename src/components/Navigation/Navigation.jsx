@@ -1,23 +1,55 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import s from "./Navigation.module.css";
+import clsx from "clsx";
 
 const Navigation = () => {
-  return (
-    <nav>
-      <NavLink className={s.navLink} to="/">
-        Home
-      </NavLink>
+  const [underlineStyle, setUnderlineStyle] = useState({ left: 0, width: 0 });
 
-      <NavLink className={s.navLink} to="/catalog">
-        Каталог
-      </NavLink>
-      <NavLink className={s.navLink} to="/aboutUs">
-        Про нас
-      </NavLink>
-      <NavLink className={s.navLink} to="/contacts">
-        Контакти
-      </NavLink>
+  const navItems = [
+    { to: "/catalog", label: "Каталог" },
+    { to: "/aboutUs", label: "Про нас" },
+    { to: "/contacts", label: "Контакти" },
+  ];
+
+  const updateUnderlinePosition = (activeIndex) => {
+    const activeLink = document.querySelectorAll(`.${s.link}`)[activeIndex];
+    if (activeLink) {
+      const rect = activeLink.getBoundingClientRect();
+      setUnderlineStyle({
+        left: rect.left - activeLink.offsetParent.getBoundingClientRect().left,
+        width: rect.width,
+      });
+    }
+  };
+
+  useEffect(() => {
+    // Получаем индекс активного элемента при изменении пути
+    const activeIndex = navItems.findIndex(
+      (item) => window.location.pathname === item.to
+    );
+    updateUnderlinePosition(activeIndex);
+  }, []);
+
+  return (
+    <nav className={s.navDiv}>
+      {navItems.map((item, index) => (
+        <NavLink
+          key={index}
+          className={({ isActive }) => clsx(s.link, isActive && s.active)}
+          to={item.to}
+          onClick={() => updateUnderlinePosition(index)}
+        >
+          {item.label}
+        </NavLink>
+      ))}
+      <div
+        className={s.underline}
+        style={{
+          left: `${underlineStyle.left}px`,
+          width: `${underlineStyle.width}px`,
+        }}
+      />
     </nav>
   );
 };

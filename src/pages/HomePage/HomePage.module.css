@@ -16,15 +16,18 @@
   border-radius: 20px;
   text-align: center;
   font-weight: 600;
-  padding: 10px;
+  font-size: 16px;
+  padding: 15px;
   box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
   border: none;
-  width: 50%;
+  width: 100%;
   margin: auto;
   opacity: 0;
   transform: translateY(20px);
   animation: fadeInUp 1s forwards;
   animation-delay: 1s;
+  box-sizing: border-box;
+  color: rgb(9, 9, 9);
 }
 .navHome {
   display: flex;

@@ -1,0 +1,25 @@
+.divAbout {
+  padding: 10px;
+  background-color: rgb(219, 219, 219);
+}
+.pText {
+  font-weight: 200;
+}
+.divText {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+.navLink {
+  background-color: rgb(46, 114, 97);
+  border-radius: 20px;
+  padding: 10px;
+  width: 50%;
+  color: rgb(9, 9, 9);
+  text-align: center;
+  font-weight: 600;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  margin: 20px auto;
+}

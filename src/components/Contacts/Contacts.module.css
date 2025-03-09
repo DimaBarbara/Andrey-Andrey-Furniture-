@@ -1,0 +1,90 @@
+.container {
+  padding: 10px;
+  background-color: rgb(219, 219, 219);
+}
+
+.contactInfo,
+.address {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+.pText {
+  font-weight: 200;
+}
+h2 {
+  font-size: 600;
+  color: rgb(46, 114, 97);
+}
+
+iframe {
+  width: 100%;
+  height: 250px;
+  border: 2px solid;
+  border-color: rgb(46, 114, 97);
+}
+
+.socialMedia {
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.socialLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.iconTelegram {
+  font-size: 30px;
+  color: #0077b5;
+  transition: color 0.3s ease-in-out;
+}
+
+.iconTelegram:hover {
+  color: #4e6eff;
+}
+.iconWhatsapp {
+  font-size: 30px;
+  color: #33c146;
+  transition: color 0.3s ease-in-out;
+}
+
+.iconWhatsapp:hover {
+  color: #4e6eff;
+}
+.iconViber {
+  font-size: 30px;
+  color: #811653;
+  transition: color 0.3s ease-in-out;
+}
+
+.iconViber:hover {
+  color: #4e6eff;
+}
+.iconMessenger {
+  font-size: 30px;
+  color: #04496e;
+  transition: color 0.3s ease-in-out;
+}
+
+.iconMessenger:hover {
+  color: #4e6eff;
+}
+
+.person {
+  margin-bottom: 20px;
+}
+
+a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: #333;
+}
