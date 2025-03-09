@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import s from "./Navigation.module.css";
 import clsx from "clsx";
 
 const Navigation = () => {
   const [underlineStyle, setUnderlineStyle] = useState({ left: 0, width: 0 });
+  const location = useLocation();
 
   const navItems = [
     { to: "/catalog", label: "Каталог" },
@@ -24,12 +25,11 @@ const Navigation = () => {
   };
 
   useEffect(() => {
-    // Получаем индекс активного элемента при изменении пути
-    const activeIndex = navItems.findIndex(
-      (item) => window.location.pathname === item.to
+    const activeIndex = navItems.findIndex((item) =>
+      location.pathname.startsWith(item.to)
     );
     updateUnderlinePosition(activeIndex);
-  }, []);
+  }, [location]);
 
   return (
     <nav className={s.navDiv}>

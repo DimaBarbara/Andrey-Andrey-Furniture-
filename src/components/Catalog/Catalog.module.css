@@ -1,32 +1,35 @@
-/* Catalog.css
-ul {
+.ulCat {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 20px;
-  padding: 0;
+  padding: 10px;
   list-style-type: none;
+  background-color: rgb(219, 219, 219);
 }
 
-li {
-  width: 200px;
-  height: 250px;
-  border: 1px solid #ddd;
+.liCat {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.5);
   border-radius: 8px;
-  overflow: hidden;
   text-align: center;
   padding: 10px;
 }
 
-img {
+.imgCat {
   width: 100%;
   height: 150px;
   object-fit: cover;
-  border-bottom: 1px solid #ddd;
+  border: 2px solid rgb(46, 114, 97);
+  margin-bottom: 5px;
 }
-
-p {
-  margin: 10px 0;
-  font-size: 16px;
-  font-weight: bold;
-  color: #333;
-} */
+.divCat {
+  display: flex;
+  flex-direction: column;
+}
+.pCat {
+  font-weight: 200;
+}
+.hCat {
+  font-weight: 600;
+}
