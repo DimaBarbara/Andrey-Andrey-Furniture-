@@ -12,7 +12,7 @@ const Catalog = () => {
             to={`/catalog/${item.id}`}
             state={{ from: location.pathname + location.search }}
           >
-            <img src={item.imageUrl} alt={item.name} />
+            <img src={`../${item.imageUrl}`} alt={item.name} />
             <p>{item.name}</p>
             <p>{item.description}</p>{" "}
           </Link>
