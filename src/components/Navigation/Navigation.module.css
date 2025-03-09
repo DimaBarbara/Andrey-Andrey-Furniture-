@@ -1,0 +1,41 @@
+/* .divCont {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+.buttonNav {
+  background-color: rgb(46, 114, 97);
+  border-radius: 20px;
+  text-align: center;
+  font-weight: 600;
+  padding: 10px;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+  border: none;
+  width: 50%;
+  margin: 0 auto;
+}
+.navHome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  margin: 0 auto;
+  border-radius: 10px;
+  gap: 20px;
+  padding: 20px;
+  bottom: 0;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  box-sizing: border-box;
+}
+.navLink {
+  background-color: rgb(46, 114, 97);
+  border-radius: 20px;
+  padding: 10px;
+  width: 100%;
+  color: rgb(9, 9, 9);
+  text-align: center;
+  font-weight: 600;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+} */

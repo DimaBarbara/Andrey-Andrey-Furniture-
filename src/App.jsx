@@ -1,12 +1,12 @@
 import React from "react";
 import { Route, Routes, useNavigate } from "react-router-dom";
-import HomePage from "./pages/HomePage";
+import HomePage from "./pages/HomePage/HomePage";
 import CatalogPage from "./pages/CatalogPage";
 import CatalogDetailsPage from "./pages/CatalogDetailsPage";
 import ContactPage from "./pages/ContactPage";
 import AboutUsPage from "./pages/AboutUsPage";
 import NotFoundPage from "./pages/NotFoundPage";
-import Layout from "./components/layout";
+import Layout from "./components/Layout/layout";
 
 const App = () => {
   // Home Button

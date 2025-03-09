@@ -1,0 +1,81 @@
+.divCont {
+  background-image: url("../../../public/img/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 10px;
+  margin: 0;
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.buttonNav {
+  background-color: rgb(46, 114, 97);
+  border-radius: 20px;
+  text-align: center;
+  font-weight: 600;
+  padding: 10px;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+  border: none;
+  width: 50%;
+  margin: auto;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+  animation-delay: 1s;
+}
+.navHome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 0 auto;
+  border-radius: 10px;
+  gap: 20px;
+  padding: 20px;
+  bottom: 0;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  box-sizing: border-box;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+}
+.navLink {
+  background-color: rgb(46, 114, 97);
+  border-radius: 20px;
+  padding: 10px;
+  width: 100%;
+  color: rgb(9, 9, 9);
+  text-align: center;
+  font-weight: 600;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.navHome > .navLink {
+  animation: fadeInUp 1s forwards;
+  animation-delay: 1.2s;
+}
+
+.navHome > .navLink:nth-child(2) {
+  animation-delay: 1.4s;
+}
+
+.navHome > .navLink:nth-child(3) {
+  animation-delay: 1.6s;
+}
