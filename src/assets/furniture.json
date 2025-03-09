@@ -3,43 +3,43 @@
       "id": 1,
       "name": "Кухня",
       "description": "Меблі для кухні: кухонні гарнітури, столи, стільці, шафи та інше.",
-      "imageUrl": "../../public/img/kitchen.jpg"
+      "imageUrl": "kitchen.jpg"
     },
     {
       "id": 2,
       "name": "Спальня",
       "description": "Меблі для спальні: ліжка, тумби, шафи, комоди та аксесуари.",
-      "imageUrl": "../../public/img/bedroom.jpg"
+      "imageUrl": "bedroom.jpg"
     },
     {
       "id": 3,
       "name": "Вітальня",
       "description": "Меблі для вітальні: дивани, крісла, журнальні столики, ТВ-тумби.",
-      "imageUrl": "../../public/img/livingRoom.jpg"
+      "imageUrl": "livingRoom.jpg"
     },
     {
       "id": 4,
       "name": "Прихожа",
       "description": "Меблі для прихожих: вішалки, шафи для взуття, дзеркала, консолі.",
-      "imageUrl": "../../public/img/hallway.jpg"
+      "imageUrl": "hallway.jpg"
     },
     {
       "id": 11,
       "name": "Ванна кімната",
       "description": "Меблі для ванної кімнати: шафи, полиці, дзеркала, тумби під умивальники.",
-      "imageUrl": "../../public/img/bathroom.jpg"
+      "imageUrl": "bathroom.jpg"
     }, 
     {
       "id": 6,
       "name": "Дитяча",
       "description": "Меблі для дитячої кімнати: ліжка, шафи, столи, стільці.",
-      "imageUrl": "../../public/img/kidsRoom.jpg"
+      "imageUrl": "kidsRoom.jpg"
     },
     {
       "id": 5,
       "name": "Офіс",
       "description": "Офісні меблі: робочі столи, стільці, шафи для документів.",
-      "imageUrl": "../../public/img/office.jpg"
+      "imageUrl": "office.jpg"
     }
   ]
 
